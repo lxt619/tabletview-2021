@@ -244,3 +244,9 @@ footer{
         flex-direction: column;
     }
 }
+
+@media screen and (max-width:600px){
+    .gamedesign {
+        margin-left: 0;
+    }
+}
