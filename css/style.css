@@ -1,0 +1,238 @@
+html{
+    background-color: #eedfdf;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    height: 100%
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex; /* using flex to get sticky footer */
+    min-height: 80vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1; /* sticky footer */
+    padding-top: 30px;
+}
+
+h1{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Signika', sans-serif;
+}
+
+h2{
+    color:black;
+    font-size: 1.5rem;
+}
+
+p{
+    color: black;
+    font-size: 16px;
+}
+
+#content {
+    padding: 50px 10%;  /* make main content's padding bigger */
+}
+
+/* Skip to content */
+
+a.skip-to-content{
+    background: white;
+    left: 0;
+    padding: 6px;
+    color:black;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
+    z-index: 1;
+}
+
+a.skip-to-content:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+  
+*:focus{
+    border: 2px solid black;
+}
+
+/* nav bar style */
+
+.logo {
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+nav{
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Signika', sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 5px 18px;
+    opacity: 0.7;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a:hover {
+    color:rgb(112, 112, 112)
+}
+
+.current {
+    color:rgb(214, 71, 126);
+}
+
+
+/* 'about' page main content style */
+
+#content img{
+    float:left;
+    margin-right: 60px;
+    border-radius: 8px;
+}
+
+/* 'portfolio' page style */
+
+.portfolio{
+    text-align: center;
+}
+
+.portfolio img{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.portfolio p{
+    color: rgb(83, 83, 83);
+    font-size: 14px;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+.gamedesign {
+    margin-left: 30px;
+}
+
+/* 'food' page style */
+
+.intro p {
+    margin-bottom: 20px;
+    color:rgb(83, 83, 83)
+}
+
+.food {
+    margin-top: 30px;
+    margin-left: 100px;
+    display:grid;
+    grid-gap:15px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+}
+
+/* 'contact' page style */ 
+
+#contact{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact_intro{
+    margin-bottom: 20px;
+}
+
+input{
+    margin: 5px;
+}
+
+.form{
+    width: 300px;
+    height: 40px;
+    color: rgb(160, 159, 159);
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 14px;
+}
+
+.form1{
+    width: 300px;
+    height: 80px;
+    color: rgb(160, 159, 159);
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 14px;
+}
+
+button {
+    margin: 20px;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn {
+    background: rgb(214, 71, 126);
+    background: linear-gradient(0deg, rgba(214, 71, 126) 0%, rgb(211, 131, 162) 100%);
+    border: none;
+}
+
+.btn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn:hover {
+    box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5), -2px -2px 3px 0 rgba(116, 125, 136, .5), inset -2px -2px 3px 0 rgba(255,255,255,.2),inset 2px 2px 3px 0 rgba(0, 0, 0, .4);
+}
+
+
+footer{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    nav li.right, 
+    nav li {float: none;}
+}
