@@ -106,6 +106,7 @@ nav a:hover {
 
 .current {
     color:rgb(214, 71, 126);
+    text-decoration: underline;
 }
 
 
