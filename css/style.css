@@ -234,6 +234,13 @@ footer{
 }
 
 @media screen and (max-width: 600px){
-    nav li.right, 
-    nav li {float: none;}
+    .logo {margin-left: 50%;}
+    nav {flex-direction: column;}
+}
+
+@media screen and (max-width:600px){
+    .food {
+        display: flex;
+        flex-direction: column;
+    }
 }
