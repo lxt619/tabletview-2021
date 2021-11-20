@@ -233,6 +233,7 @@ footer{
     text-align: center;
 }
 
+
 @media screen and (max-width: 600px){
     .logo {
         text-align: center;
@@ -242,8 +243,10 @@ footer{
 
 @media screen and (max-width:600px){
     .food {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1, 300px;
+        grid-template-rows: repeat(9, 300px);
+        grid-gap: 10px;
     }
 }
 
