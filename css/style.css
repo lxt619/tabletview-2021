@@ -237,6 +237,7 @@ footer{
 @media screen and (max-width: 600px){
     .logo {
         text-align: center;
+        margin: auto;
     }
     nav {flex-direction: column;}
 }
